@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="331.0" prefWidth="580.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="ex03.commonService.membership.MemberController">
+   <children>
+      <Label layoutX="231.0" layoutY="25.0" prefHeight="40.0" prefWidth="110.0" text="회원가입">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="86.0" prefWidth="68.0" text="이       름">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="130.0" text="패스워드">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="294.0" layoutY="86.0" prefHeight="20.0" prefWidth="96.0" text="아     이     디">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="289.0" layoutY="130.0" prefHeight="20.0" prefWidth="110.0" text="패스워드 확인">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="178.0" text="성   별">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="218.0" text="좋아하는 것">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fxName" layoutX="119.0" layoutY="85.0" />
+      <TextField fx:id="fxPw" layoutX="119.0" layoutY="129.0" />
+      <TextField fx:id="fxId" layoutX="399.0" layoutY="85.0" />
+      <TextField fx:id="fxPwOk" layoutX="399.0" layoutY="129.0" />
+      <RadioButton fx:id="rdoMan" layoutX="127.0" layoutY="177.0" mnemonicParsing="false" text="남성">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdoWoman" layoutX="196.0" layoutY="177.0" mnemonicParsing="false" text="여성" toggleGroup="$gender">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="311.0" layoutY="174.0" text="연령구분">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chkMusic" layoutX="136.0" layoutY="219.0" mnemonicParsing="false" text="음악">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chkSport" layoutX="214.0" layoutY="219.0" mnemonicParsing="false" text="스포츠">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chkMovie" layoutX="307.0" layoutY="218.0" mnemonicParsing="false" text="영화">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <ComboBox fx:id="cmbAge" layoutX="399.0" layoutY="173.0" prefHeight="22.0" prefWidth="161.0" promptText="연령대 선택" />
+      <Button layoutX="122.0" layoutY="273.0" mnemonicParsing="false" onAction="#membershipProc" prefHeight="34.0" prefWidth="128.0" text="회원가입">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="332.0" layoutY="273.0" mnemonicParsing="false" onAction="#memberCancle" prefHeight="34.0" prefWidth="128.0" text="취    소">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
